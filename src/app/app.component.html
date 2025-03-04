@@ -1,0 +1,74 @@
+
+<header class="header">
+  <div class="logo">
+      <h1>F**K</h1>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <i class="fas fa-search"></i>
+      <i class="fas fa-microphone"></i>
+    </div>
+    <div class="auth-cart">
+      <a (click)="navigateToLogin()" class="auth-link">Đăng nhập</a>/<a (click)="navigateToRegister()" class="auth-link">Đăng ký</a>
+      <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+  </div>
+  <div>
+    
+    <img src="\assets\anh\iconbong3.jpg" alt="Soccer Ball" class="corner-image">
+  </div>
+</header>
+  <div class="menu-bar">
+    <ul>
+        <li *ngFor="let item of menuItems" (click)="toggleMenu(item)">
+            <a [routerLink]="item.route">
+                <i class=" itemico" [class]="item.icon"></i>
+                <span> {{ item.label }} </span>
+                <span class="toggle-icon">
+                    <i *ngIf="!item.isExpanded" class="fa-solid fa-chevron-right"></i>
+                    <i *ngIf="item.isExpanded" class="fa-solid fa-chevron-down"></i>
+                </span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="container">
+<app-menu></app-menu>
+<router-outlet></router-outlet>
+</div>
+<footer>
+  <div class="footer-container">
+      <!-- Về chúng tôi -->
+      <div class="about">
+          <h3>Về chúng tôi</h3>
+          <div class="logo1">=)))</div>
+          <div class="social-icons">
+              <a href="#"><img src="\assets\anh\Facebook-icon-1.png" alt="Facebook"></a>
+              <a href="#"><img src="\assets\anh\ins.jpg" alt="Instagram"></a>
+              <a href="#"><img src="\assets\anh\yt.png" alt="YouTube"></a>
+          </div>
+      </div>
+
+      <!-- Thông tin -->
+      <div class="info">
+          <h3>Thông tin</h3>
+          <ul>
+              <li><a href="#">Chính sách thanh toán</a></li>
+              <li><a href="#">Chính sách đổi trả</a></li>
+              <li><a href="#">Chính sách bảo hành</a></li>
+              <li><a href="#">Chính sách giao nhận</a></li>
+              <li><a href="#">Chính sách bảo mật</a></li>
+          </ul>
+      </div>
+
+      <!-- Liên hệ -->
+      <div class="contact">
+          <h3>Liên hệ</h3>
+          <p><span>📍</span> 180 Hoàng Quốc Việt, Cổ Nhuế, Bắc Từ Liêm, Hà Nội</p>
+          <p><span>📞</span> 06375486654</p>
+          <p>Zalo: 06375486654</p>
+      </div>
+  </div>
+</footer>
