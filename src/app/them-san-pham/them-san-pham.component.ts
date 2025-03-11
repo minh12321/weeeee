@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ProductService } from '../api-sevice/san_pham.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Product } from '../api-sevice/san_pham.model';
-import { environment } from '../environments/environment';
+import { environment } from '../../environments/environment';
 
 @Component({
     selector: 'app-them-san-pham',
