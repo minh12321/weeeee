@@ -16,7 +16,7 @@ export class AdminComponent {
       this.router.navigate(['/account']);
     }
 
-    navigateToproduce() {
-      this.router.navigate(['/suasanpham']);
-    }
+    // navigateToproduce() {
+    //   this.router.navigate(['/suasanpham']);
+    // }
 }

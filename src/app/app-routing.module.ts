@@ -4,7 +4,6 @@ import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
-import { ThemSanPhamComponent } from './them-san-pham/them-san-pham.component';
 import { AccountComponent } from './account/account.component';  // Updated import
 
 const routes: Routes = [
@@ -12,8 +11,7 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
   { path: 'admin', component: AdminComponent },
-  { path: 'account', component: AccountComponent },
-  {path: 'suasanpham',component: ThemSanPhamComponent}  // Updated path
+  { path: 'account', component: AccountComponent }  // Updated path
 ];
 
 @NgModule({
